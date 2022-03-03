@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/limbo-works/Limbo.ApiAuthentication/compare/v1.1.0...v1.1.1) (2022-03-03)
+
+
+### Bug Fixes
+
+* Limbo.DataAccess version bump ([4a3a0af](https://github.com/limbo-works/Limbo.ApiAuthentication/commit/4a3a0af7d1ccd3c04444bba57c883839219081cd))
+
 ## [1.1.0](https://github.com/limbo-works/Limbo.ApiAuthentication/compare/v1.0.0...v1.1.0) (2022-03-03)
 
 
