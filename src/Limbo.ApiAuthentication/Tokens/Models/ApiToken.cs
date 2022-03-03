@@ -8,11 +8,11 @@ namespace Limbo.ApiAuthentication.Tokens.Models {
         /// <summary>
         /// The access token
         /// </summary>
-        public string Token { get; set; }
+        public string? Token { get; set; }
         /// <summary>
         /// The refresh token
         /// </summary>
-        public string RefreshToken { get; set; }
+        public string? RefreshToken { get; set; }
         /// <summary>
         /// When the access token expires
         /// </summary>

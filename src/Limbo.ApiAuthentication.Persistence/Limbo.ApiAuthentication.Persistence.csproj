@@ -16,7 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Limbo.DataAccess" Version="1.0.0" />
+    <PackageReference Include="Limbo.DataAccess" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.14" />
   </ItemGroup>
 
 	<!-- Generate XML documentation -->
@@ -31,5 +32,6 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/limbo-works/Limbo.ApiAuthentication</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Nullable>enable</Nullable>
 	</PropertyGroup>
 </Project>

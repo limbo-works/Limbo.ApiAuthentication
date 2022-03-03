@@ -10,8 +10,14 @@ namespace Limbo.ApiAuthentication.Tokens.Services {
         /// <summary>
         /// Generates a token
         /// </summary>
+        /// <returns></returns>
+        ApiToken GenerateToken();
+
+        /// <summary>
+        /// Generates a token
+        /// </summary>
         /// <param name="claims"></param>
         /// <returns></returns>
-        ApiToken GenerateToken(List<Claim> claims = null);
+        ApiToken GenerateToken(List<Claim?>? claims);
     }
 }

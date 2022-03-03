@@ -24,7 +24,7 @@ namespace Limbo.ApiAuthentication.Persistence.Contexts.Extensions {
                 return factory.CreateDbContext();
             });
 
-            var context = services.BuildServiceProvider().GetService<IApiAuthenticationContext>();
+            var context = services.BuildServiceProvider().GetRequiredService<IApiAuthenticationContext>();
             context.Context.Database.Migrate();
 
             return services;

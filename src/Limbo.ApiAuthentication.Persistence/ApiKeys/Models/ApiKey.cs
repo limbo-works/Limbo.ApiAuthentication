@@ -16,17 +16,21 @@ namespace Limbo.ApiAuthentication.Persistence.ApiKeys.Models {
         /// <summary>
         /// The api key
         /// </summary>
-        public string Key { get; set; }
+        public string? Key { get; set; }
         /// <summary>
         /// The claims of the api key
         /// </summary>
-        public virtual ICollection<ApiClaim> Claims { get; set; }
+        public virtual ICollection<ApiClaim>? Claims { get; set; }
 
         /// <summary>
         /// Gets the claims as <see cref="Claim"/>
         /// </summary>
         /// <returns></returns>
-        public List<Claim> GetClaims() {
+        public List<Claim?>? GetClaims() {
+            if (Claims == null) {
+                return null;
+            }
+
             return Claims.Select(claim => claim.GetClaim()).ToList();
         }
     }

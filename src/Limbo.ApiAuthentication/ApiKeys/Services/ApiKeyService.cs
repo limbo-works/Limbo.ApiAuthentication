@@ -2,6 +2,7 @@
 using Limbo.ApiAuthentication.Persistence.ApiKeys.Repositories;
 using Limbo.DataAccess.Services;
 using Limbo.DataAccess.Services.Crud;
+using Limbo.DataAccess.Settings;
 using Microsoft.Extensions.Logging;
 
 namespace Limbo.ApiAuthentication.ApiKeys.Services {
@@ -12,7 +13,8 @@ namespace Limbo.ApiAuthentication.ApiKeys.Services {
         /// </summary>
         /// <param name="repository"></param>
         /// <param name="logger"></param>
-        public ApiKeyService(IApiKeyRepository repository, ILogger<ServiceBase<IApiKeyRepository>> logger) : base(repository, logger) {
+        /// <param name="dataAccessSettings"></param>
+        public ApiKeyService(IApiKeyRepository repository, ILogger<ServiceBase<IApiKeyRepository>> logger, DataAccessSettings dataAccessSettings) : base(repository, logger, dataAccessSettings) {
         }
     }
 }
