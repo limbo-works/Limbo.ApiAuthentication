@@ -27,7 +27,7 @@
 	<!-- Generate XML documentation -->
 	<PropertyGroup>
 		<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
-		<Version>1.1.0</Version>
+		<Version>1.1.1</Version>
 		<Authors>nikcio</Authors>
 		<Company>Limbo</Company>
 		<Description>Easy to setup api authentication using Asp Net Cores built-in workflow</Description>
