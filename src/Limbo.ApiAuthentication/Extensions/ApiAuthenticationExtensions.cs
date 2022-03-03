@@ -18,24 +18,24 @@ namespace Limbo.ApiAuthentication.Extensions {
     /// </summary>
     public static class ApiAuthenticationExtensions {
         /// <summary>
-        /// Adds Nikcio.ApiAuthentication
+        /// Adds Limbo.ApiAuthentication
         /// </summary>
         /// <param name="services"></param>
         /// <param name="configuration"></param>
         /// <returns></returns>
-        public static IServiceCollection AddNikcioApiAuthentication(this IServiceCollection services, IConfiguration configuration) {
+        public static IServiceCollection AddLimboApiAuthentication(this IServiceCollection services, IConfiguration configuration) {
             var defaultSettings = new ApiAuthenticationConfigurationSettings();
-            return AddNikcioApiAuthentication(services, configuration, defaultSettings);
+            return AddLimboApiAuthentication(services, configuration, defaultSettings);
         }
 
         /// <summary>
-        /// Adds Nikcio.ApiAuthentication
+        /// Adds Limbo.ApiAuthentication
         /// </summary>
         /// <param name="services"></param>
         /// <param name="configuration"></param>
         /// <param name="settings"></param>
         /// <returns></returns>
-        public static IServiceCollection AddNikcioApiAuthentication(this IServiceCollection services, IConfiguration configuration, ApiAuthenticationConfigurationSettings settings) {
+        public static IServiceCollection AddLimboApiAuthentication(this IServiceCollection services, IConfiguration configuration, ApiAuthenticationConfigurationSettings settings) {
             services
                 .AddSettings(configuration, settings.ConfigurationSection)
                 .AddTokens()
