@@ -2,11 +2,11 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Limbo.ApiAuthentication.Persistence.Contexts.Extentions {
+namespace Limbo.ApiAuthentication.Persistence.Contexts.Extensions {
     /// <summary>
-    /// Extentions
+    /// Extensions
     /// </summary>
-    public static class ContextExtentions {
+    public static class ContextExtensions {
         /// <summary>
         /// Adds contexts
         /// </summary>

@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Limbo.ApiAuthentication.ApiClaims.Extentions {
+namespace Limbo.ApiAuthentication.ApiClaims.Extensions {
     /// <summary>
-    /// Extentions
+    /// Extensions
     /// </summary>
-    public static class ApiClaimExtentions {
+    public static class ApiClaimExtensions {
         /// <summary>
         /// Adds api claims
         /// </summary>

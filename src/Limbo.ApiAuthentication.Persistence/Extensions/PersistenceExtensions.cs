@@ -1,14 +1,14 @@
-﻿using Limbo.ApiAuthentication.Persistence.ApiClaims.Extentions;
-using Limbo.ApiAuthentication.Persistence.ApiKeys.Extentions;
-using Limbo.ApiAuthentication.Persistence.Contexts.Extentions;
+﻿using Limbo.ApiAuthentication.Persistence.ApiClaims.Extensions;
+using Limbo.ApiAuthentication.Persistence.ApiKeys.Extensions;
+using Limbo.ApiAuthentication.Persistence.Contexts.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Limbo.ApiAuthentication.Persistence.Extentions {
+namespace Limbo.ApiAuthentication.Persistence.Extensions {
     /// <summary>
-    /// Extentions
+    /// Extensions
     /// </summary>
-    public static class PersistenceExtentions {
+    public static class PersistenceExtensions {
         /// <summary>
         /// Adds persistence layer
         /// </summary>

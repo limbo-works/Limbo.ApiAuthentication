@@ -1,11 +1,11 @@
-﻿using Limbo.ApiAuthentication.ApiClaims.Services;
+﻿using Limbo.ApiAuthentication.Tokens.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Limbo.ApiAuthentication.ApiClaims.Extentions {
+namespace Limbo.ApiAuthentication.Tokens.Extensions {
     /// <summary>
-    /// Extentions
+    /// Extensions
     /// </summary>
-    public static class ServiceExtentions {
+    public static class ServiceExtensions {
         /// <summary>
         /// Adds services
         /// </summary>
@@ -13,7 +13,7 @@ namespace Limbo.ApiAuthentication.ApiClaims.Extentions {
         /// <returns></returns>
         public static IServiceCollection AddServices(this IServiceCollection services) {
             services
-                .AddScoped<IApiClaimService, ApiClaimsService>();
+                .AddScoped<ITokenService, TokenService>();
 
             return services;
         }

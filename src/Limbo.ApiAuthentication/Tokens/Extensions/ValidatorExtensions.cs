@@ -1,11 +1,11 @@
 ﻿using Limbo.ApiAuthentication.Tokens.Validators;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Limbo.ApiAuthentication.Tokens.Extentions {
+namespace Limbo.ApiAuthentication.Tokens.Extensions {
     /// <summary>
-    /// Extentions
+    /// Extensions
     /// </summary>
-    public static class ValidatorExtentions {
+    public static class ValidatorExtensions {
         /// <summary>
         /// Adds validators
         /// </summary>

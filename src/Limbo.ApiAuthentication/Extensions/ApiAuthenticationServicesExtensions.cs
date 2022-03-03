@@ -1,13 +1,13 @@
-﻿using Limbo.ApiAuthentication.ApiClaims.Extentions;
-using Limbo.ApiAuthentication.ApiKeys.Extentions;
-using Limbo.ApiAuthentication.Authentication.Extentions;
+﻿using Limbo.ApiAuthentication.ApiClaims.Extensions;
+using Limbo.ApiAuthentication.ApiKeys.Extensions;
+using Limbo.ApiAuthentication.Authentication.Extensions;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Limbo.ApiAuthentication.Extentions {
+namespace Limbo.ApiAuthentication.Extensions {
     /// <summary>
-    /// Extentions
+    /// Extensions
     /// </summary>
-    public static class ApiAuthenticationServicesExtentions {
+    public static class ApiAuthenticationServicesExtensions {
         /// <summary>
         /// Adds api authentication services
         /// </summary>

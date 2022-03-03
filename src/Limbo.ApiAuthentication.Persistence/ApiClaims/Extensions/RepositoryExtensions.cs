@@ -1,11 +1,11 @@
 ﻿using Limbo.ApiAuthentication.Persistence.ApiClaims.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Limbo.ApiAuthentication.Persistence.ApiClaims.Extentions {
+namespace Limbo.ApiAuthentication.Persistence.ApiClaims.Extensions {
     /// <summary>
-    /// Extentions
+    /// Extensions
     /// </summary>
-    public static class RepositoryExtentions {
+    public static class RepositoryExtensions {
         /// <summary>
         /// Adds repositories
         /// </summary>

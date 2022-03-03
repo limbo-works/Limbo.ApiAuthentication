@@ -6,11 +6,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Limbo.ApiAuthentication.Settings.Extentions {
+namespace Limbo.ApiAuthentication.Settings.Extensions {
     /// <summary>
-    /// Extentions
+    /// Extensions
     /// </summary>
-    public static class SettingsExtentions {
+    public static class SettingsExtensions {
         /// <summary>
         /// Adds settings
         /// </summary>

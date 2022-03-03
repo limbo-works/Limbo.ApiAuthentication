@@ -2,21 +2,21 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Principal;
 using System.Text;
-using Limbo.ApiAuthentication.Persistence.Extentions;
-using Limbo.ApiAuthentication.Settings.Extentions;
+using Limbo.ApiAuthentication.Persistence.Extensions;
+using Limbo.ApiAuthentication.Settings.Extensions;
 using Limbo.ApiAuthentication.Settings.Models;
-using Limbo.ApiAuthentication.Tokens.Extentions;
+using Limbo.ApiAuthentication.Tokens.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Limbo.ApiAuthentication.Extentions {
+namespace Limbo.ApiAuthentication.Extensions {
     /// <summary>
-    /// Extentions
+    /// Extensions
     /// </summary>
-    public static class ApiAuthenticationExtentions {
+    public static class ApiAuthenticationExtensions {
         /// <summary>
         /// Adds api authentication
         /// </summary>

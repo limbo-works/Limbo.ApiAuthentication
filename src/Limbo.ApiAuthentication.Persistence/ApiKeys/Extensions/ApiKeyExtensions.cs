@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Limbo.ApiAuthentication.ApiKeys.Extentions {
+namespace Limbo.ApiAuthentication.Persistence.ApiKeys.Extensions {
     /// <summary>
-    /// Extentions
+    /// Extensions
     /// </summary>
-    public static class ApiKeyExtentions {
+    public static class ApiKeyExtensions {
         /// <summary>
         /// Adds api keys
         /// </summary>
@@ -12,7 +12,7 @@ namespace Limbo.ApiAuthentication.ApiKeys.Extentions {
         /// <returns></returns>
         public static IServiceCollection AddApiKeys(this IServiceCollection services) {
             services
-                .AddServices();
+                .AddRespositories();
 
             return services;
         }
