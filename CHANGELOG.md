@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/limbo-works/Limbo.ApiAuthentication/compare/v1.1.1...v1.1.2) (2022-03-03)
+
+
+### Bug Fixes
+
+* Fixed extension naming ([1cc89e3](https://github.com/limbo-works/Limbo.ApiAuthentication/commit/1cc89e37de6e25c8f4efac3d0bfe84b56b051096))
+
 ### [1.1.1](https://github.com/limbo-works/Limbo.ApiAuthentication/compare/v1.1.0...v1.1.1) (2022-03-03)
 
 
