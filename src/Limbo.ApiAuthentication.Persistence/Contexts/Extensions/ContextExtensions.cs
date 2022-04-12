@@ -16,8 +16,7 @@ namespace Limbo.ApiAuthentication.Persistence.Contexts.Extensions {
         /// <returns></returns>
         public static IServiceCollection AddContexts(this IServiceCollection services, IConfiguration configuration, string connectionStringKey) {
             services.AddPooledDbContextFactory<ApiAuthenticationContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString(connectionStringKey))
-                .UseLazyLoadingProxies());
+                options.UseSqlServer(configuration.GetConnectionString(connectionStringKey)));
 
             services.AddTransient<IApiAuthenticationContext>(x => {
                 var factory = x.GetRequiredService<IDbContextFactory<ApiAuthenticationContext>>();
