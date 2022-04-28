@@ -53,6 +53,15 @@ public class TestController : ControllerBase {
 }
 ```
 
+And make sure you've added:
+
+```csharp
+app.UseAuthentication();
+app.UseAuthorization();
+```
+
+In you request pipeline.
+
 You can now use the Asp Net Core `Authorize` attribute and all it's funtionallity. [See more here.](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/simple?view=aspnetcore-6.0)
 
 ### Using Umbraco? (See here)
@@ -69,3 +78,12 @@ public void ConfigureServices(IServiceCollection services) {
 ```
 
 You have to place the `AddLimboApiAuthentication` call after the umbraco setup because the configuration done by the package otherwise would be overridden and therefore not work.
+
+### Debug errors
+
+Theres a extensions you can use for debugging the jwt authentication. Add the following to your request pipeline:
+
+(asp net 6 - .net 6 example)
+```csharp
+app.UseJwtDebug(app.Services.GetRequiredService<ApiAuthenticationSettings>());
+```

@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Limbo.ApiAuthentication.TestBase", "Limbo.ApiAuthentication.TestBase\Limbo.ApiAuthentication.TestBase.csproj", "{93833B5B-4F7A-4199-AD82-663122889954}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{885503E5-52B6-4632-A95F-B76C4C70204C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{885503E5-52B6-4632-A95F-B76C4C70204C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{885503E5-52B6-4632-A95F-B76C4C70204C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93833B5B-4F7A-4199-AD82-663122889954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93833B5B-4F7A-4199-AD82-663122889954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93833B5B-4F7A-4199-AD82-663122889954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93833B5B-4F7A-4199-AD82-663122889954}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
