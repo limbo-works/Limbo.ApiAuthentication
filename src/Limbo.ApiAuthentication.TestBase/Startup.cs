@@ -76,14 +76,18 @@ namespace Limbo.ApiAuthentication.TestBase {
                 app.UseSwaggerUI();
             }
 
+            app.UseRouting();
+
             app.UseHttpsRedirection();
 
             app.UseJwtDebug(apiAuthenticationSettings);
 
             app.UseAuthentication();
             app.UseAuthorization();
-
-            app.UseEndpoints(endpoints => endpoints.MapControllers());
+            
+            app.UseEndpoints(endpoints => {
+                endpoints.MapControllers();
+            });
         }
     }
 }
