@@ -6,6 +6,9 @@ using Microsoft.EntityFrameworkCore;
 namespace Limbo.ApiAuthentication.Persistence.Contexts {
     /// <inheritdoc/>
     public class ApiAuthenticationContext : DbContext, IApiAuthenticationContext {
+
+        private static readonly string _tablePrefix = "Limbo_ApiAuthentication";
+
         /// <summary>
         /// Constructor
         /// </summary>
@@ -31,6 +34,11 @@ namespace Limbo.ApiAuthentication.Persistence.Contexts {
         /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            // Prefix tables
+            foreach (var entityType in modelBuilder.Model.GetEntityTypes()) {
+                entityType.SetTableName(_tablePrefix + "_" + entityType.GetTableName());
+            }
         }
     }
 }
