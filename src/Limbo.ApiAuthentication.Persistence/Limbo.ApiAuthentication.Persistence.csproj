@@ -22,7 +22,7 @@
 	<!-- Generate XML documentation -->
 	<PropertyGroup>
 		<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
-		<Version>1.1.3-dev03</Version>
+		<Version>2.0.0-preview.0</Version>
 		<Authors>nikcio</Authors>
 		<Company>Limbo</Company>
 		<Description>Persistence package for Limbo.ApiAuthentication</Description>
