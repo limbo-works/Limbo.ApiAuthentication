@@ -23,7 +23,7 @@ namespace Limbo.ApiAuthentication.Persistence.Extensions {
                 .AddContexts(configuration, connectionStringKey)
                 .AddApiKeys()
                 .AddApiClaims()
-                .AddDataAccess(configuration, dataAccessConfigurationSection);
+                .AddDataAccess(configuration, options => options.SettingsOptions.ConfigurationSection = dataAccessConfigurationSection);
 
             return services;
         }
