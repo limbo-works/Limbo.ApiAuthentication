@@ -1,7 +1,7 @@
 ﻿using Limbo.ApiAuthentication.Persistence.ApiClaims.Extensions;
 using Limbo.ApiAuthentication.Persistence.ApiKeys.Extensions;
 using Limbo.ApiAuthentication.Persistence.Contexts.Extensions;
-using Limbo.DataAccess.Extensions;
+using Limbo.EntityFramework.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -16,14 +16,14 @@ namespace Limbo.ApiAuthentication.Persistence.Extensions {
         /// <param name="services"></param>
         /// <param name="configuration"></param>
         /// <param name="connectionStringKey"></param>
-        /// <param name="dataAccessConfigurationSection"></param>
+        /// <param name="entityFrameworkConfigurationSection"></param>
         /// <returns></returns>
-        public static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration, string connectionStringKey, string dataAccessConfigurationSection) {
+        public static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration, string connectionStringKey, string entityFrameworkConfigurationSection) {
             services
                 .AddContexts(configuration, connectionStringKey)
                 .AddApiKeys()
                 .AddApiClaims()
-                .AddDataAccess(configuration, options => options.SettingsOptions.ConfigurationSection = dataAccessConfigurationSection);
+                .AddEntityFramework(configuration, options => options.SettingsOptions.ConfigurationSection = entityFrameworkConfigurationSection);
 
             return services;
         }

@@ -1,5 +1,5 @@
 ﻿using Limbo.ApiAuthentication.Persistence.ApiKeys.Models;
-using Limbo.DataAccess.Conventions;
+using Limbo.EntityFramework.Conventions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

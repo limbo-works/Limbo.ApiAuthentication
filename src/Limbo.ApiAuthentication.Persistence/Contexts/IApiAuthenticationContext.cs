@@ -1,4 +1,4 @@
-﻿using Limbo.DataAccess.Contexts.Models;
+﻿using Limbo.EntityFramework.Contexts.Models;
 
 namespace Limbo.ApiAuthentication.Persistence.Contexts {
     /// <summary>

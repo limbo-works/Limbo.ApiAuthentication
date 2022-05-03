@@ -1,6 +1,6 @@
 ﻿using Limbo.ApiAuthentication.Persistence.ApiClaims.Models;
 using Limbo.ApiAuthentication.Persistence.ApiClaims.Repositories;
-using Limbo.DataAccess.Services.Crud;
+using Limbo.EntityFramework.Services.Crud;
 
 namespace Limbo.ApiAuthentication.ApiClaims.Services {
     /// <summary>

@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Security.Claims;
 using Limbo.ApiAuthentication.Persistence.ApiKeys.Models;
-using Limbo.DataAccess.Models;
+using Limbo.EntityFramework.Models;
 
 namespace Limbo.ApiAuthentication.Persistence.ApiClaims.Models {
     /// <summary>
     /// A api claim
     /// </summary>
-    public class ApiClaim : GenericId {
+    public class ApiClaim : IGenericId {
         /// <summary>
         /// The id
         /// </summary>

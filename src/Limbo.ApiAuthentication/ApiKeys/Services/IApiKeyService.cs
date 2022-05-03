@@ -1,6 +1,6 @@
 ﻿using Limbo.ApiAuthentication.Persistence.ApiKeys.Models;
 using Limbo.ApiAuthentication.Persistence.ApiKeys.Repositories;
-using Limbo.DataAccess.Services.Crud;
+using Limbo.EntityFramework.Services.Crud;
 
 namespace Limbo.ApiAuthentication.ApiKeys.Services {
     /// <summary>
